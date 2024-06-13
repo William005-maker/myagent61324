@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+           
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo2">
+        <img src="assets/logo_icon.png" alt="Logo Icon">
+      </div>
+      <div class="section__text__p1"></div>
+      <div class="logo">
+        John Harris
+        <br>
+        <span style="font-size: 12pt;">Lic: IL-399699936</span>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Community</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <h1 div="class="logo">The Harris Agency, Inc.</h1>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Community</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+    <div class="section__pic-container">
+      <img src="assets/property__casualty.png" alt="John Harris profile picture" class="about-pic"/>
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Welcome to... </p>
+      <h1 class="title">John Harris</h1>
+      <p class="section__text__p2">Park Insurance & Brokerage™ Agent</p>
+      <p class="section__text__p2">Auto | Home | Life</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="sendSMS()">SMS Text</button>
+        <button class="btn btn-color-2" onclick="makeCall()">Call Us</button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/SMlogos.png" alt="My LinkedIn profile" class="icon"/>
+      </div>    
+      <!-- Trigger/Open The Agent Iframe -->
+      <button id="myBtn">Open FAQ</button>
+         <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <iframe src="./FAQ.html" frameborder="0" width="100%" height="600px"></iframe>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get to know us...</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>15+ years <br />Agency Principal</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              "We're your Chicagoland insurance partner. With a focus on Auto and Homeowner Insurance, we also guide families through Life and Health Insurance choices. Located in the Back of the Yards, we're proud members of the Hispanic Chamber of Commerce. As a family-owned business with three Illinois locations, we're experts in Chicagoland relocations. Serving Fuller Park, Brighton Park, and Gage Park, we're dedicated to protecting what matters most."
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Insurance Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Major Lines</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Auto</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Home</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Rentors</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Life</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Health</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Umbrella</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Specialty Lines</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Collectors</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Travel</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Wedding</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pet</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Community Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Alpha House</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+              More Info
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+              Contact Us
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Access Project</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+              More Info
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+              Contact Us
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Health Matters</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                More Info
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Contact Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:jharris@gmail.com">jharris@gmail.com</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Community</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 John Harris. All Rights Reserved.</p>
+    </footer>
+  
+    <script>
+    // Logic to toggle hamburger menu in page top right corner  
+    function toggleMenu() {
+      const menu = document.querySelector(".menu-links");
+      const icon = document.querySelector(".hamburger-icon");
+      menu.classList.toggle("open");
+      icon.classList.toggle("open");
+    }
+    </script>
+
+    <script>
+    // Logic to ensure FAQ and Agent do not conflict and overlap
+    document.addEventListener('DOMContentLoaded', function() {
+        var modal = document.getElementById("myModal");
+        var btnFAQ = document.getElementById("myBtn");
+        var spanCloseFAQ = document.getElementsByClassName("close")[0];
+        var agentButton = document.getElementById('show-iframe-btn');
+        var agentIframe = document.getElementById('agent-iframe');
+        var agentCloseButton = document.getElementById('close-agent-btn');
+
+      // Function to open FAQ and ensure the agent iframe is hidden
+      btnFAQ.onclick = function() {
+          modal.style.display = "block";
+          agentIframe.style.display = "none"; // Hide the agent iframe when FAQ is opened
+          agentButton.style.display = 'block'; // Ensure the agent button is visible
+          agentCloseButton.style.display = 'none'; // Hide the close button for the agent
+      };
+
+      // Function to close the FAQ modal
+      spanCloseFAQ.onclick = function() {
+          modal.style.display = "none";
+      };
+
+      // Close FAQ modal when clicking outside of it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      };
+
+      // Functionality Section to manage agent iframe display 
+      agentButton.onclick = function() {
+          agentIframe.style.display = "block";
+          modal.style.display = "none"; // Close FAQ when opening the agent iframe
+          agentCloseButton.style.display = 'block'; // Show the agent close button
+          this.style.display = 'none'; // Hide the open button for the agent
+      };
+
+      // Close the agent iframe and ensure its button toggles correctly
+      agentCloseButton.onclick = function() {
+          agentIframe.style.display = "none";
+          agentButton.style.display = 'block';
+          this.style.display = 'none';
+      };
+    });
+    </script>
+     
+<!--- ************ -- Make Changes Here!............. D-id Agent Set up ************ -->
+
+    <!-- Step 1: Greate your own gif and use that for your agent - upload top assets directory -->
+    <button id="show-iframe-btn" class="open-floating-btn" style="background-image: url('assets/Agent.gif'); background-size: cover; background-repeat: no-repeat; background-position: center; background-color: transparent; border: none; border-radius: 5px; width: 120px; height: 120px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; cursor: pointer; position: fixed; bottom: 10px; right: 10px; color: rgb(255, 255, 255); font-size: 15px; z-index: 1000; overflow: hidden;"></button>   
+    <button id="close-agent-btn" class="close-floating-btn" style="display: none;">Close agent</button>
+
+    <!-- Step 2: Change this Agent and Key using yours from your agent creations at D-ID in the Creative Reality Studio per How to Video -->
+    <iframe id="agent-iframe" src="https://studio.d-id.com/agents/share?id=agt_EkAZcyRl&key=WjI5dloyeGxMVzloZFhSb01ud3hNRGc1TWpjek5EQTBNRFV6TmpNMk56TTVPVEk2U25wYWQxTldNRlZhVjJvNFFUVlpSbFl6WXpabQ==" frameborder="0" width="390" height="600" allow="microphone" style="position: fixed; border-radius: 10px; bottom: 10px; right: 10px; display: none;"></iframe>
+
+     <!-- Step 3: Change this footer text as required if you like -->
+    <div id="footer-cover">
+      <div class="scrolling-text">Please type or use the "Mic" for questions..."</div>
+    </div>
+
+<!--- ************ -- No  other changes required ..... D-id Agent Set up ************ -->
+
+    <script>
+    // JavaScript to control launch and shutdown of Agent in the iframe window 
+      document.addEventListener('DOMContentLoaded', function() {
+          var showButton = document.getElementById('show-iframe-btn');
+          var closeButton = document.getElementById('close-agent-btn');
+          var iframe = document.getElementById('agent-iframe');
+          var footerCover = document.getElementById('footer-cover');
+
+          showButton.addEventListener('click', function() {
+              iframe.style.display = 'block'; // Show the iframe
+              closeButton.style.display = 'block'; // Show the close button
+              footerCover.style.display = 'block'; // Show the footer cover
+              this.style.display = 'none'; // Hide the show button
+          });
+
+          closeButton.addEventListener('click', function() {
+              iframe.style.display = 'none'; // Hide the iframe
+              footerCover.style.display = 'none'; // Hide the footer cover
+              showButton.style.display = 'block'; // Show the show button
+              this.style.display = 'none'; // Ensure the close button is hidden
+          });
+      });
+    </script> 
+  </body>
+</html>
